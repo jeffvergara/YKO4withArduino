@@ -20,7 +20,7 @@ const int buttonPin4 = 7;
 int timedelay = 100;
 
 void setup() {
-  // put your setup code here, to run once:
+  // Input configuration
   pinMode (button1,    INPUT_PULLUP);
   pinMode (button2,    INPUT_PULLUP);
   pinMode (button3,    INPUT_PULLUP);
