@@ -20,11 +20,13 @@ const int buttonPin4 = 7;
 int timedelay = 100;
 
 void setup() {
-  // Input configuration
+  // Input configuration for YK04
   pinMode (button1,    INPUT_PULLUP);
   pinMode (button2,    INPUT_PULLUP);
   pinMode (button3,    INPUT_PULLUP);
   pinMode (button4,    INPUT_PULLUP);
+  
+  //INPUT configuration for Arduino Uno
   pinMode (buttonPin1, INPUT_PULLUP);
   pinMode (buttonPin2, INPUT_PULLUP);
   pinMode (buttonPin3, INPUT_PULLUP);
@@ -75,7 +77,7 @@ void buttonPress(){
 
 
 void loop(){
-  // put your main code here, to run repeatedly:
+  //calling both function
   remote();
   buttonPress();
 
